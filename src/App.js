@@ -4,6 +4,8 @@ import UilReact from '@iconscout/react-unicons/icons/uil-react'
 import TopButtons from './components/TopButtons';
 import Inputs from './components/Inputs';
 import TimeLocation from './components/TimeLocation';
+import Temperature from './components/Temperature';
+import Forecast from './components/Forecast';
 function App() {
   return (
    <div className='mx-auto max-w-screen-md mt4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 
@@ -11,6 +13,8 @@ function App() {
     <TopButtons/>
     <Inputs/>
     <TimeLocation/>
+    <Temperature/>
+    <Forecast/>
    </div> 
   );
 }
