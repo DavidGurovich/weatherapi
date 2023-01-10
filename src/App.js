@@ -10,6 +10,12 @@ import getFormattedWeatherData from './api/weather';
 
 function App() {
 
+  const [weather, setWeather] = useState(null);
+  const [units, setUnits] = useState("metric");
+  const [city, setCity] = useState("San Diego");
+  
+
+
   const fetchWeather = async () => {
     const data = await getFormattedWeatherData({ q: "london"});
     console.log(data);

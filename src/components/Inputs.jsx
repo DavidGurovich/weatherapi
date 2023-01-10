@@ -2,6 +2,10 @@ import React from 'react'
 import {HiOutlineSearch} from 'react-icons/hi';
 import {TbLocation} from 'react-icons/tb';
 
+
+
+
+
 function Inputs() {
   return (
     <div className='flex flex-row justify-center my-6'>
