@@ -25,8 +25,8 @@ function App() {
     <Inputs/>
     <TimeLocation/>
     <Temperature/>
-    <Forecast title="hourly forecast"/>
-    <Forecast title="daily forecast"/>
+    {/* <Forecast title="hourly forecast"/>
+    <Forecast title="daily forecast"/> */}
 
    </div> 
   );
