@@ -6,15 +6,18 @@ import Inputs from './components/Inputs';
 import TimeLocation from './components/TimeLocation';
 import Temperature from './components/Temperature';
 import Forecast from './components/Forecast';
-import getData from './api/weather';
+import getFormattedWeatherData from './api/weather';
+
 function App() {
 
-  const fetchWeather = async() => {
-    const data = await getData('weather', {q: 'london'});
-    console.log(data)
+  const fetchWeather = async () => {
+    const data = await getFormattedWeatherData({ q: "london"});
+    console.log(data);
 
-  }
-  fetchWeather()
+  };
+
+  fetchWeather();
+
   return (
    <div className='rounded-3xl mx-auto max-w-screen-md mt4 mt-14 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 
    h-fit shadow-xl shadow-gray-400'>
