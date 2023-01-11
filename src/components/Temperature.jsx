@@ -6,9 +6,7 @@ from 'react-icons/tb';
 function Temperature({weather}) {
   return (
     <div>
-       <div className='flex items-center justify-center py-6 text-xl text-cyan-300'>
-        <p> {weather.description}</p>
-        </div>
+       
 
         <div className='flex flex-row items-center justify-between text-white py-3'>
             <img src={weather.iconURL} alt="" className='w-20' 
@@ -36,7 +34,10 @@ function Temperature({weather}) {
 
             </div>
         </div>
-
+        <div className='flex items-center justify-center py-6 text-xl text-cyan-300'>
+            <p className='capitalize'> {weather.description}</p>
+        </div>
+        
         <div className=' flex flex-row items-center justify-center space-x-1 text-white text-sm py-3'>
           {/* <TbSunrise/>
           <p> Sunrise: <span className='font-medium ml-1'> </span></p>

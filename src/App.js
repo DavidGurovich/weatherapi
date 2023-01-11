@@ -14,9 +14,8 @@ function App() {
   const [weather, setWeather] = useState(null);
   const [units, setUnits] = useState("imperial");
   const [city, setCity] = useState("San Diego");
-
-
-
+  
+  
   useEffect(() => {
     const fetchWeatherData = async () => {
       const data = await getFormattedWeatherData(city, units);
@@ -34,7 +33,7 @@ function App() {
    h-fit shadow-xl shadow-gray-400'>
     
     <TopButtons/>
-    <Inputs/>
+    <Inputs city = {city} setCity = {setCity}/>
     <TimeLocation weather = {weather}/>
     <Temperature weather = {weather}/>
     {/* <Forecast title="hourly forecast"/>
