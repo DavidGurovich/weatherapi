@@ -36,8 +36,6 @@ function App() {
     <Inputs city={city} setCity={setCity} units={units} setUnits={setUnits}/>
     <TimeLocation weather = {weather}/>
     <Temperature weather = {weather}/>
-    {/* <Forecast title="hourly forecast"/>
-    <Forecast title="daily forecast"/> */}
     
    </div> 
   );

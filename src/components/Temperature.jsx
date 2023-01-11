@@ -9,9 +9,8 @@ function Temperature({weather}) {
        
 
         <div className='flex flex-row items-center justify-between text-white py-3'>
-            <img src={weather.iconURL} alt="" className='w-20' 
-            />
-            <p className='text-5xl'>{weather.temp.toFixed()}°</p>
+            <img src={weather.iconURL} alt="" className='w-20'/>
+            <p className='pl-10 text-5xl'>{weather.temp.toFixed()}°</p>
             <div className='flex flex-col space-y-2'>
 
                 <div className='flex font-light text-sm items-center justify-center'>
