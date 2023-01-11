@@ -35,9 +35,8 @@ function App() {
     
     <TopButtons/>
     <Inputs/>
-    <h1>{`${weather.name}`}</h1>
     <TimeLocation weather = {weather}/>
-    <Temperature/>
+    <Temperature weather = {weather}/>
     {/* <Forecast title="hourly forecast"/>
     <Forecast title="daily forecast"/> */}
     
