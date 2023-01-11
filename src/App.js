@@ -32,7 +32,7 @@ function App() {
    <div className='rounded-3xl mx-auto max-w-screen-md mt4 mt-14 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 
    h-fit shadow-xl shadow-gray-400'>
     
-    <TopButtons/>
+    <TopButtons setCity = {setCity}/>
     <Inputs city = {city} setCity = {setCity}/>
     <TimeLocation weather = {weather}/>
     <Temperature weather = {weather}/>
