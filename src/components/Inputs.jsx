@@ -2,10 +2,11 @@ import React, {useState} from 'react'
 import {HiOutlineSearch} from 'react-icons/hi';
 import {TbLocation} from 'react-icons/tb';
 
-function Inputs({city, setCity}) {
+function Inputs({city, setCity, units, setUnits}) {
   
-  const unitConvert = () => {
-
+  const unitConvert = (e) => {
+    const selectedUnit = e.currentTarget.name;
+    if (units !== selectedUnit) setUnits(selectedUnit);
   }
   const searchClick = (e) => {
     setCity({ q: city });
@@ -24,11 +25,19 @@ function Inputs({city, setCity}) {
         
       </div>
       <div className='flex flex-row w-1/4 items-center justify-center'>
-        <button name='metric' className='text-xl text-white font-light cursor-pointer transition ease-out hover:scale-110'>
+        <button 
+        name='metric' 
+        className='text-xl text-white font-light cursor-pointer transition ease-out hover:scale-110'
+        onClick = {unitConvert}
+        >
         °C
         </button>
         <p className='mx-2 text-white'>|</p>
-        <button name='imperial' className='text-xl font-light text-white cursor-pointer transition ease-out hover:scale-110'>
+        <button 
+         name='imperial'
+         className='text-xl font-light text-white cursor-pointer transition ease-out hover:scale-110'
+         onClick = {unitConvert}
+         >
         °F
         </button>
       </div>
