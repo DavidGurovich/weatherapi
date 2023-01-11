@@ -11,7 +11,7 @@ function Temperature({weather}) {
         </div>
 
         <div className='flex flex-row items-center justify-between text-white py-3'>
-            <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" className='w-20' 
+            <img src={weather.iconURL} alt="" className='w-20' 
             />
             <p className='text-5xl'>{weather.temp.toFixed()}°</p>
             <div className='flex flex-col space-y-2'>
@@ -38,13 +38,13 @@ function Temperature({weather}) {
         </div>
 
         <div className=' flex flex-row items-center justify-center space-x-1 text-white text-sm py-3'>
-          <TbSunrise/>
+          {/* <TbSunrise/>
           <p> Sunrise: <span className='font-medium ml-1'> </span></p>
           <p className='font-light'>|</p>
 
           <TbSunset/>
           <p> Sunset: <span className='font-medium ml-1'></span></p>
-          <p className='font-light'>|</p>
+          <p className='font-light'>|</p> */}
 
           <CgArrowUp/>
           <p> High: <span className='font-medium ml-1'>{`${weather.temp_max.toFixed()}°`}</span></p>
@@ -52,7 +52,7 @@ function Temperature({weather}) {
 
           <CgArrowDown/>
           <p> Low: <span className='font-medium ml-1'>{weather.temp_min.toFixed()}°</span></p>
-          <p className='font-light'>|</p>
+          
         </div>
     </div>
     
