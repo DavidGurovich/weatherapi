@@ -4,7 +4,9 @@ import {TbLocation} from 'react-icons/tb';
 
 function Inputs({city, setCity}) {
   
+  const unitConvert = () => {
 
+  }
   const searchClick = (e) => {
     setCity({ q: city });
 
@@ -19,7 +21,7 @@ function Inputs({city, setCity}) {
         />
         <HiOutlineSearch size = {25} className='text-white cursor-pointer transition ease-out hover:scale-150'
           onClick= {searchClick}/>
-        <TbLocation size = {25} className='text-white cursor-pointer transition ease-out hover:scale-150'/>
+        
       </div>
       <div className='flex flex-row w-1/4 items-center justify-center'>
         <button name='metric' className='text-xl text-white font-light cursor-pointer transition ease-out hover:scale-110'>
