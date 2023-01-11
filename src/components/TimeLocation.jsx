@@ -1,16 +1,16 @@
 import React from 'react'
 
-function TimeLocation() {
+function TimeLocation({time, weather}) {
   return (
     <div>
         <div className='flex items-center justify-center my-6'>
             <p className=' text-white text-xl font-extralight'>
-                Thursday, 5 January 2023 | 1:38 PM
+            {new Date().toLocaleString()}
             </p>
         </div>
         <div className='flex items-center justify-center my-3'>
             <p className='text-white text-3xl font-medium'>
-                San Diego, CA
+               {weather.name}
             </p>
         </div>
     </div>

@@ -10,7 +10,7 @@ const BASE_URL =
 const makeIconURL = (iconId) =>
   `https://openweathermap.org/img/wn/${iconId}@2x.png`;
 
-const getFormattedWeatherData = async (city, units = "metric") => {
+const getFormattedWeatherData = async (city, units = "imperial") => {
   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=${units}`;
 
   const data = await fetch(URL)
