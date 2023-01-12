@@ -29,13 +29,13 @@ function App() {
 
   return (
     weather &&
-   <div className='rounded-3xl mx-auto max-w-screen-md mt4 mt-14 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 
+   <div className='rounded-3xl mx-auto max-w-screen-md mt4 mt-14 py-5 px-32 bg-gradient-to-br from-cyan-600 to-purple-700 
    h-fit shadow-xl shadow-gray-400'>
     
     <TopButtons setCity = {setCity}/>
     <Inputs city={city} setCity={setCity} units={units} setUnits={setUnits}/>
     <TimeLocation weather = {weather}/>
-    <Temperature weather = {weather}/>
+    <Temperature units = {units} weather = {weather}/>
     
    </div> 
   );
