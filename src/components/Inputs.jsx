@@ -29,7 +29,7 @@ function Inputs({city, setCity, units, setUnits}) {
       <div className='flex flex-row w-1/4 items-center justify-center'>
         <button 
         name='metric' 
-        className='text-xl text-white font-light cursor-pointer transition ease-out hover:scale-110'
+        className='text-3xl text-white font-light cursor-pointer transition ease-out hover:scale-110'
         onClick = {unitConvert}
         >
         °C
@@ -37,7 +37,7 @@ function Inputs({city, setCity, units, setUnits}) {
         <p className='mx-2 text-white'>|</p>
         <button 
          name='imperial'
-         className='text-xl font-light text-white cursor-pointer transition ease-out hover:scale-110'
+         className='text-3xl font-light text-white cursor-pointer transition ease-out hover:scale-110'
          onClick = {unitConvert}
          >
         °F

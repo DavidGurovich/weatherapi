@@ -33,7 +33,7 @@ function TopButtons({setCity}) {
         {cities.map((city) => (
             <button 
                 key = {city.id} 
-                className='text-white text-lg font-medium cursor-pointer transition ease-out hover:scale-110'
+                className='text-white text-xl font-medium cursor-pointer transition ease-out hover:scale-110'
                 onClick={(e) => setCity(city.title)}
                 >
                 {city.title}
